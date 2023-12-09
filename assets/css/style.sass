@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+@import './variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+.container
+    position: relative
+
+.header
+    padding: 40px 113px
+    @include centering
+    justify-content: space-between
+    nav
+        @include centering
+        gap: 40px
+        span
+            justify-content: center
+            i
+                margin-left: 20px
+
+.promo
+    @include centering
+    padding: 0 113px
+    gap: 30px
+    &-left
+        width: 40%
+        h1
+            font-size: 4.5rem
+            /* width: 50% */
+            span
+                color: #FF8A56
+        p
+            font-size: 1.375rem
+            color: #666
+            /* width: 50% */
+            margin-top: 34px
+        &_btns
+            margin-top: 38px
+            &_call, &_dl
+                padding: 20px 30px
+                font-size: 1rem
+                border: none
+                cursor: pointer
+            &_call
+                background-color: #000
+                color: #fff
+                transition: all .3s ease-in-out
+                &:hover
+                    background-color: #fff
+                    outline: 1px solid #000
+                    color: #000
+                    font-weight: 500
+                    transition: all .3s ease-in-out
+            &_dl
+                background-color: transparent
+                &:hover i
+                    margin-left: 20px
+                    transition: all .3s ease-in-out
+                i
+                    margin-left: 10px
+                    transition: all .3s ease-in-out
+
+.ipsum
+    align-items: center
+    justify-content: center
+    display: flex
+    flex-direction: column  
+    gap: 45px
+    span
+        font-size: 18px
+    &-logo
+        display: flex   
+        gap: 100px   
+
+.intro 
+    align-items: center
+    justify-content: center
+    display: flex
+    padding-top: 156px
+    flex-direction: column
+    span
+        color: #FF5E69 
+        font-size: 22px
+    h2
+        width: 768px    
+        font-size: 54px
+        text-align: center
+
+.midone
+    display: flex
+    justify-content: center
+    gap: 90px       
+    padding-top: 115px
+    &-item
+        display: flex
+        justify-content: center
+        width: 306px
+        flex-direction: column
+        gap: 10px  
+        
+        img
+            width: 70px
+            height: 70px
+
+
+
+.about
+    position: relative
+    padding-left: 12px
+.about:before
+    content: ''
+    width: 7px
+    height: 7px
+    background-color: #000
+    position: absolute
+    left: - 2px
+    top: 50%
+    transform: translateY(-50%)
+
+.projects
+    overflow-x: hidden
+    padding: 160px 16% 370px 16%
+    &-top
+        @include centering
+        justify-content: space-between
+    &_text
+        span
+            color: #B16CEA
+            font-size: 22px
+        p
+            font-size: 54px
+    &_btn
+        &_b
+            padding: 20px 30px
+            font-size: 1rem
+            border: none
+            cursor: pointer
+            background-color: #000
+            color: #fff
+            transition: all .5s ease-in-out
+
+            &:hover
+                background-color: #fff
+                outline: 1px solid #000
+                color: #000
+                font-weight: 500
+                transition: all .5s ease-in-out
+    &_slider
+        margin-top: 70px
+        height: 468px
+        position: absolute
+        &-cards-holder
+            display: flex
+            justify-content: flex-end
+            gap: 24px
+        &-card
+            &-bottom
+                height: 35%
+                padding: 33px
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 18px
+                background: #fff
+                button
+                    background: transparent
+                    border: none
+                    font-size: 1.2rem
+                    i
+                        margin-left: 10px
+            &-header
+                span
+                    text-transform: uppercase
+                    color: #3C46FF
+                    letter-spacing: 4px
+                    font-weight: 700
+                    font-size: .875rem
+            &-desc-header
+                p
+                    font-size: 1.5rem
+                    font-weight: 700
+    &_sliderBtns
+        display: flex
+        justify-content: flex-end
+        gap: 10px
+        padding-right: 300px
+        button
+            width: 54px
+            height: 54px
+            background: #fff
+            border: none
+
+.blogs
+    height: 1100px
+    padding: 160px 0 0 16%  
+    background: #000
+    display: flex
+    gap: 190px
+    &-left
+        margin-top: 118px
+        span
+            text-transform: uppercase
+            color: #FFA84B
+            letter-spacing: 4px
+            font-size: 22px
+            font-weight: 700
+        p
+            text-transform: uppercase
+            color: #FFF
+            font-size: 54px
+            font-weight: 700
+            letter-spacing: 1px
+        button
+            background: transparent
+            border: none
+            font-size: 1rem
+            color: #fff
+            i  
+                margin-left: 10px
+    
+    &-right
+        display: flex
+        flex-direction: column
+        &_text
+            margin-top: 118px
+            width: 400px
+            display: flex
+            flex-direction: column
+            gap: 25px
+        
+        span
+            color: #fff
+            font-size: 28px
+            font-weight: 700
+            width: 500px
+        p
+            color: rgba(255, 255, 255, 0.70)
+            font-size: 15px
+            font-weight: 700
+
+        button
+            background: transparent
+            border: none
+            font-size: 1rem
+            color: #fff
+            width: 120px
+            i  
+                margin-left: 10px
+
+
+
+
+
+.designer
+    padding: 155px 113px
+    width: 100%
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        &_header
+            span
+                color: #FF5E69
+                font-size: 1.375rem
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 4px
+            p
+                font-size: 3.375rem
+                font-weight: 700
+        &_desc
+            width: 51%
+            p
+                color: #666
+                font-size: 1.375rem
+    &-images
+        @include centering
+        align-items: flex-start
+        gap: 16px
+        padding-top: 115px
+        &_item
+            display: flex
+            flex-direction: column
+            gap: 16px
+            transition: all .3s ease-in-out
+            &_top
+                width: 338px
+                height: 305px
+                transition: all .3s ease-in-out
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            &:not(:nth-child(3)):hover
+                transform: scale(1.01)
+                cursor: pointer
+                transition: all .3s ease-in-out
+            &_bot
+                transition: all .3s ease-in-out
+            &_top:hover, &_bot:hover
+                transform: scale(1.01)
+                cursor: pointer
+                transition: all .3s ease-in-out
+
+.experience
+    padding: 154px 113px
+    display: flex
+    gap: 48px
+    width: 100%
+    &-edu
+        width: 50%
+        &_header
+            margin-bottom: 83px
+            p
+                font-size: 2.25rem
+        &_list
+            &_item
+                display: flex
+                position: relative
+                justify-content: space-between
+                padding-right: 60px
+                padding-bottom: 40px
+                margin-bottom: 32px
+                border-bottom: 1px solid #E5E5E5
+                &-holder
+                    display: flex
+                    gap: 20px
+                    
+                &-name
+                    p
+                        font-size: 1.5rem
+                        font-weight: 700
+                        margin-bottom: 9px
+                    span
+                        color: rgba(0, 0, 0, 0.60)
+                #arrow
+                    position: absolute
+                    right: 0
+                    top: 0
+                &-year
+                    padding-top: 35px
+                    color: rgba(0, 0, 0, 0.60)
+
+                    
+.help 
+    padding: 0 113px
+    &-header
+        p
+            color: #4353FF
+            font-size: 22px
+            font-weight: 700
+            letter-spacing: 4px
+            text-transform: uppercase
+        span
+            font-size: 54px
+            font-weight: 700
+            letter-spacing: 4px
+            text-transform: uppercase
+
+    &-dir
+        padding: 120px 0
+        display: flex    
+        justify-content: space-between
+        align-items: center
+        &-right
+            display: flex
+            flex-direction: column
+            gap: 112px  
+            &_top
+                display: flex
+                flex-direction: column
+                gap: 32px
+                &_text
+                    width: 565px
+                    font-size: 36px
+            &_btm
+                display: flex
+                justify-content: space-between
+                align-items: center
+                &_text
+                    p
+                        font-weight: 700
+                    span
+                        font-weight: 400        
+                &_bttn
+                    display: flex
+                    justify-content: flex-end
+                    gap: 10px
+                   
+                    button
+                        width: 54px
+                        height: 54px
+                        color: #fff 
+                        background: #000
+                        border: none
+
+
+
+
+.question
+    background-color: #000
+    padding: 83px 112px
+    &-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        p
+            color: #FF8A56
+            font-size: 22px
+            font-weight: 700
+            line-height: 22px
+            letter-spacing: 4px
+            text-transform: uppercase
+        span
+            color: #fff
+            font-size: 54px 
+            font-weight: 700
+
+    &-body
+        padding-top: 122px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &_l
+            display: flex
+            flex-direction: column
+            
+            &_text
+                position: relative
+                width: 583px
+                height: 82px
+                border-bottom: 1px solid rgba(229, 229, 229, 0.3)
+                padding-top: 1rem
+                p
+                    color: #fff
+                    font-size: 24px
+                    font-weight: 700
+                &_i
+                    i
+                        position: absolute
+                        color: #fff
+                        right: 1px
+                        top: 1rem
+        &_r
+            display: flex
+            flex-direction: column
+            
+            &_text
+                position: relative
+                width: 583px
+                height: 82px
+                border-bottom: 1px solid rgba(229, 229, 229, 0.3)
+                padding-top: 1rem
+                p
+                    color: #fff
+                    font-size: 24px
+                    font-weight: 700
+                &_i
+                    i
+                        position: absolute
+                        color: #fff
+                        right: 1px
+                        top: 1rem                
+.bottom
+    background-color: #000
+    padding: 0 113px 
+    &-header
+        p
+            color: #fff
+            font-size: 54px
+            font-weight: 700
+        span
+            color: #3C46FF
+            font-size: 54px
+            font-weight: 700           
+    &-dir
+        display: flex
+        justify-content: space-between 
+        padding-bottom: 40px
+        &-left
+            p
+                color: #8A95AD    
+        &-right
+            color: #fff
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 123px
+            &_text
+                display: flex
+                flex-direction: column
+                gap: 55px
+.footer
+    background-color: #000
+    padding: 40px 113px
+    align-items: center
+    justify-content: center
+    span    
+        color: #8A95AD
+
+.callModal
+    position: absolute
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: 100%
+    top: 0
+    @include centering
+    display: none
+    form 
+        width: 300px
+        height: 300px
+        background: #fff
+        @include centering
+        flex-direction: column
+        gap: 20px
+        position: relative
+        button
+            width: 60%
+            cursor: pointer
+    #closeBtn
+        background: none
+        border: none
+        color: #fff
+        position: absolute
+        right: -100px
+        top: 0
+        font-size: 20px
+
+.activeModal
+    display: flex
+
+
+
+
+    
